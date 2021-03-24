@@ -1,0 +1,9 @@
+@use './variables' as *;
+
+@mixin primary_bg {
+  background-color: $bg;
+}
+
+@mixin primary_text {
+  color:white;
+}

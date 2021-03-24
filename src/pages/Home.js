@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Spring } from 'react-spring/renderprops';
-import logo_image from '../assets/logo_image_small.png';
 
 import { IntroLogo } from '../components/IntroLogo';
-import '../styles/pages/home.scss';
+import { Navbar } from '../components/Navbar';
+import '../styles/home.scss';
 
 export const Home = () => {
   const [showGif, setShowGif] = useState(true);
@@ -20,14 +20,17 @@ export const Home = () => {
   return (
     <div>
     {
-      showGif ? 
-      <IntroLogo 
-        logoDuration={logoDuration} 
-        animDuration={animDuration} 
-      />
-      :
-      <div class='logo-container'>
-        <img className='main-logo' alt='' src={logo_image} />
+      // showGif ? 
+      // <IntroLogo 
+      //   logoDuration={logoDuration} 
+      //   animDuration={animDuration} 
+      // />
+      // :
+      <div className='logo-container'>
+        <Navbar />
+        <div className='d-flex justify-content-center align-items-center intro-text'>
+          Hello! My name is Rickesh Khilnani and I am a fullstack engineer.
+        </div>
       </div>
     }
     </div>

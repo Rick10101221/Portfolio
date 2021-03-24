@@ -1,0 +1,46 @@
+@use './global';
+@use './variables' as *;
+@use './mixins' as *;
+
+
+.primary-text {
+  @include primary_text;
+}
+
+.primary-bg {
+  @include primary_bg;
+}
+
+.txt-navbar {
+  @include primary_text;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.intro-text {
+  @include primary_text;
+  font-size: 3rem;
+  max-width: 30ch;
+}
+
+.logo-container {
+  @include primary_bg;
+  height: 100vh;
+}
+
+.gif-container {
+  @include primary_bg;
+  height: 100vh;
+}
+
+.intro-logo {
+  display: block;
+  width: 25vw;
+  height: auto;
+}
+
+.main-logo {
+  display: block;
+  width: 5rem;
+  height: auto;
+}

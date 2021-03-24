@@ -1,5 +1,5 @@
-@use './global';
-@use './variables' as *;
+@use '../global';
+@use '../variables' as *;
 
 .logo-container {
   background-color: $bg;

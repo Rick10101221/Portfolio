@@ -9,7 +9,7 @@ export const IntroLogo = (props) => {
   } = props;
 
   return (
-    <div className='gif-container'>
+    <div className='d-flex justify-content-center align-items-center gif-container'>
       <Spring
         from={{ transform: 'scale(1)', opacity: 1}}
         to={{ transform: 'scale(0.01)}', opacity: 0 }}

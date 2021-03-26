@@ -26,10 +26,14 @@ export const Home = () => {
       //   animDuration={animDuration} 
       // />
       // :
-      <div className='logo-container'>
-        <Navbar />
-        <div className='d-flex justify-content-center align-items-center intro-text'>
-          Hello! My name is Rickesh Khilnani and I am a fullstack engineer.
+      <div className='container-fluid main-container'>
+        <div className='row primary-bg'>
+          <Navbar />
+        </div>
+        <div className='row intro-body'>
+          <div className='col col-lg-12 col-md-8 offset-md-1 intro-text'>
+            Hello! My name is Rickesh Khilnani and I am a fullstack engineer.
+          </div>
         </div>
       </div>
     }

@@ -17,15 +17,25 @@
   color: white;
 }
 
+.main-container {
+  height: 100vh;
+  background-color: green;
+}
+
+.intro-body {
+  margin-top: 30vh;
+}
+
 .intro-text {
   @include primary_text;
   font-size: 3rem;
   max-width: 30ch;
+  background-color: red;
+  text-align: center;
 }
 
 .logo-container {
   @include primary_bg;
-  height: 100vh;
 }
 
 .gif-container {
